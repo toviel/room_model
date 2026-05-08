@@ -2,11 +2,12 @@
 <html>
 <head>
 <style>
-  html, body { margin: 0; height: 100%; }
+  html, body { margin: 0; height: 100%; overflow: hidden; touch-action: none; }
   model-viewer {
     width: 100%;
     height: 100%;
     display: block;
+    touch-action: none;
   }
 </style>
 </head>
@@ -15,7 +16,10 @@
 <model-viewer
   src="5_7_2026-1.glb"
   camera-controls
-  shadow-intensity="1">
+  shadow-intensity="1"
+  camera-orbit="180deg 75deg 100%"
+  interaction-prompt="none"
+  disable-pan>
 </model-viewer>
 </body>
 </html>
